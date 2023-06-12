@@ -224,7 +224,7 @@ function App() {
               <Grid>
                 <Typography minHeight="24px">
                   {wordCount === wordCountLimit &&
-                    "Please contact us directly for papers over 10,000 words"}
+                    "Para manuscritos superiores a 10.000 palabras, contáctanos para pedir un presupuesto"}
                 </Typography>
               </Grid>
             </Grid>
