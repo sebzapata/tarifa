@@ -10,9 +10,11 @@ import {
   Radio,
   RadioGroup,
   Slider,
+  TextField,
   Typography,
 } from "@mui/material";
 import "./App.css";
+import { mainColour, textColor } from ".";
 
 function App() {
   const [wordCount, setWordCount] = useState(0);
@@ -71,7 +73,7 @@ function App() {
         case "Estilo":
           totalPrice += wordCount * estiloRate;
           break;
-        case "OtotipoEstilo":
+        case "OrtotipoEstilo":
           totalPrice += wordCount * ortoTipoEstiloRate;
           break;
       }
@@ -132,9 +134,9 @@ function App() {
           />
           <FormControlLabel value="Estilo" control={<Radio />} label="Estilo" />
           <FormControlLabel
-            value="OtotipoEstilo"
+            value="OrtotipoEstilo"
             control={<Radio />}
-            label="Ototipo & Estilo"
+            label="Ortotipo & Estilo"
           />
         </RadioGroup>
       </FormControl>
@@ -163,7 +165,10 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{ backgroundColor: "#237e98", color: "#e6f5cd" }}
+    >
       <header className="App-header">
         <Grid width="500px">
           <Typography variant="h1" fontSize="24px" marginBottom="8px">
@@ -188,7 +193,19 @@ function App() {
                   />
                 </Grid>
                 <Grid>
-                  <Input
+                  <TextField
+                    // style={{
+                    //   color: "#e6f5cd",
+                    // }}
+                    sx={{
+                      "&.MuiInputBase-root::before": {
+                        "border-bottom": "8px solid green",
+                      },
+                      "&.MuiInput-root::before": {
+                        "border-bottom": "8px solid green",
+                      },
+                    }}
+                    variant="standard"
                     value={wordCount}
                     size="small"
                     onChange={(event) => {
@@ -279,7 +296,10 @@ function App() {
               onClick={calculateCost}
               disabled={isButtonDisabled}
               variant="contained"
-              sx={{ marginRight: "8px" }}
+              sx={{
+                marginRight: "8px",
+                color: "white",
+              }}
             >
               Calcular
             </Button>
