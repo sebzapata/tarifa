@@ -128,13 +128,13 @@ function App() {
           <FormControlLabel
             value="Ortotipo"
             control={<Radio />}
-            label="Ortotipo"
+            label="Ortotipográfica"
           />
           <FormControlLabel value="Estilo" control={<Radio />} label="Estilo" />
           <FormControlLabel
             value="OrtotipoEstilo"
             control={<Radio />}
-            label="Ortotipo & Estilo"
+            label="Ortotipográfica & Estilo"
           />
         </RadioGroup>
       </FormControl>
@@ -176,7 +176,7 @@ function App() {
             <Grid>
               <Grid display="flex" width="100%">
                 <Grid>
-                  <Typography>Word Count</Typography>
+                  <Typography>Número de Palabras</Typography>
                 </Grid>
                 <Grid width="80%" marginRight="16px">
                   <Slider
@@ -284,7 +284,7 @@ function App() {
                       }}
                     />
                   }
-                  label="Eres estudiante?"
+                  label="¿Eres estudiante?"
                 />
               </FormGroup>
             </Grid>
