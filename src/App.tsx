@@ -169,9 +169,6 @@ function App() {
     >
       <header className="App-header">
         <Grid width="500px">
-          <Typography variant="h1" fontSize="24px" marginBottom="8px">
-            Calculador
-          </Typography>
           <form style={{ height: "100%", marginBottom: "16px" }}>
             <Grid>
               <Grid display="flex" width="100%">
@@ -222,9 +219,9 @@ function App() {
                 </Grid>
               </Grid>
               <Grid>
-                <Typography minHeight="24px">
+                <Typography minHeight="24px" whiteSpace="pre-line">
                   {wordCount === wordCountLimit &&
-                    "Please contact us directly for papers over 10,000 words"}
+                    "Para manuscritos superiores a 10.000 palabras,\ncontáctanos para pedir un presupuesto"}
                 </Typography>
               </Grid>
             </Grid>
