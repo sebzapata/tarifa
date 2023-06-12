@@ -6,7 +6,6 @@ import {
   FormControlLabel,
   FormGroup,
   Grid,
-  Input,
   Radio,
   RadioGroup,
   Slider,
@@ -14,7 +13,6 @@ import {
   Typography,
 } from "@mui/material";
 import "./App.css";
-import { mainColour, textColor } from ".";
 
 function App() {
   const [wordCount, setWordCount] = useState(0);

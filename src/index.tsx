@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 
 export const textColor = "#e6f5cd";
-const backgroundColor = "#237e98";
+// const backgroundColor = "#237e98";
 export const mainColour = "#8cc4b4";
 const buttonHoverColor = "#78baa7";
 const checkboxColor = "#e6f5cd";
